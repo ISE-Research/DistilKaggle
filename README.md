@@ -9,8 +9,6 @@
 <p align="center">
   <a href="https://doi.org/10.5281/zenodo.10317389"><img src="https://img.shields.io/badge/Dataset-Zenodo-007D8A" alt="Dataset: Zenodo"></a>
   <a href="https://doi.org/10.1145/3643991.3644882"><img src="https://img.shields.io/badge/Paper-MSR%202024-3457A5" alt="Paper: MSR 2024"></a>
-  <a href="https://zenodo.org/records/10317389"><img src="https://img.shields.io/badge/Data-CC%20BY%204.0-64748B" alt="Data license: CC BY 4.0"></a>
-  <a href="https://github.com/ISE-Research/DistilKaggle/blob/main/LICENSE"><img src="https://img.shields.io/badge/Code-MIT-64748B" alt="Code license: MIT"></a>
 </p>
 
 <p align="center"><strong><a href="https://zenodo.org/records/10317389">Download the dataset on Zenodo →</a></strong></p>
