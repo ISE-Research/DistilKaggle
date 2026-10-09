@@ -9,6 +9,9 @@ body { font-family: 'Noto Sans', sans-serif; }
 .affiliation-block { margin-top: 1rem; }
 .eql-cntrb { margin-top: .5rem; font-size: .875rem; }
 .publication-links { margin-top: 1rem; }
+.section-links { display: flex; flex-wrap: wrap; justify-content: center; column-gap: 1.25rem; row-gap: .25rem; margin-top: .75rem; font-size: .875rem; }
+.section-links a { padding: .25rem 0; white-space: nowrap; }
+.section-links a:hover { text-decoration: underline; }
 .link-block { display: inline-block; }
 .link-block a { margin: 5px 2px; }
 .icon svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
@@ -98,7 +101,7 @@ details[open] > summary { margin-bottom: 1rem; }
   .table-hint-inline { display: inline; }
 }
 @media print {
-  .publication-links, .metric-controls, .copy-button, .skip-link { display: none !important; }
+  .publication-links, .section-links, .metric-controls, .copy-button, .skip-link { display: none !important; }
   .metrics-scroll { max-height: none; }
   tr[hidden] { display: table-row !important; }
   .table-scroll { overflow: visible; }
