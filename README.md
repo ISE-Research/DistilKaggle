@@ -5,7 +5,7 @@ The public research site is https://ise-research.github.io/DistilKaggle/ . GitHu
 ## Edit and preview
 
 - Edit `index.html` for text, tables, links, authors, and citation.
-- Edit `static/css/index.css` for layout and responsive styles.
+- The original `static/css/bulma.min.css` provides the Academic Project Page / Nerfies template. Edit `static/css/index.css` only for template typography and dataset-specific figures, tables, and responsive controls.
 - Edit `static/js/index.js` for metric filtering and copy buttons.
 - The figures are in `static/images/`; `static/distilkaggle.bib` is the downloadable citation. Update the inline and downloadable BibTeX together.
 - Run `python3 -m http.server 8765 --bind 127.0.0.1` from this directory and open http://127.0.0.1:8765/ . No build step is required.
@@ -29,4 +29,4 @@ The social preview is a typographic graphic generated for this website. The favi
 
 Check desktop and narrow-mobile rendering, horizontal table scrolling, loaded figures, every navigation anchor, search and category filtering (including no results), the expandable result table, copy buttons, downloadable BibTeX, and local asset paths. Core content is HTML and remains available with JavaScript disabled. External resources should be checked against their authoritative records; do not download the multi-gigabyte dataset merely to test a link.
 
-The original template's unused static files are preserved in Git but are not loaded by this page. There are no carousel, tracking, video, or PDF-viewer scripts on the published page.
+The original template's Bulma stylesheet is loaded directly. Unused template media and scripts are preserved in Git but are not loaded by this page. There are no carousel, tracking, video, or PDF-viewer scripts on the published page.
