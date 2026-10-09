@@ -1,312 +1,119 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DistilKaggle — A Distilled Dataset of Kaggle Jupyter Notebooks</title>
+<meta name="description" content="Explore DistilKaggle: code and Markdown cells from 542,051 Kaggle notebooks, with notebook metrics for research on code quality and documentation. MSR 2024.">
+<link rel="canonical" href="https://ise-research.github.io/DistilKaggle/">
+<meta property="og:type" content="website"><meta property="og:title" content="DistilKaggle — Kaggle notebooks, distilled for research">
+<meta property="og:description" content="Code cells, Markdown cells, and notebook metrics. Explore the MSR 2024 paper, dataset, figures, and research tools.">
+<meta property="og:url" content="https://ise-research.github.io/DistilKaggle/">
+<meta property="og:image" content="https://ise-research.github.io/DistilKaggle/static/images/social-preview.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="DistilKaggle">
+<meta name="twitter:description" content="A Distilled Dataset of Kaggle Jupyter Notebooks · MSR 2024">
+<meta name="twitter:image" content="https://ise-research.github.io/DistilKaggle/static/images/social-preview.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+<link rel="stylesheet" href="static/css/index.css"><script defer src="static/js/index.js"></script>
 </head>
 <body>
-
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="wordmark" href="#main">DistilKaggle<span aria-hidden="true">.</span></a><div class="nav-links"><a href="#dataset">Dataset</a><a href="#metrics">Metrics</a><a href="#application">Application</a><a href="#citation">Cite</a></div></nav></header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="title">
+<h1 id="title">DistilKaggle<span>A Distilled Dataset of<br class="desktop-break"> Kaggle Jupyter Notebooks</span></h1>
+<p class="authors">Mojtaba Mostafavi Ghahfarokhi <span>·</span> Arash Asgari<br> Mohammad Abolnejadian <span>·</span> Abbas Heydarnoori</p>
+<p class="affiliations">Sharif University of Technology<br><small>Paper affiliation. Abbas Heydarnoori is also affiliated with Bowling Green State University in the paper’s author note.</small></p>
+<p class="venue"><strong>MSR 2024</strong> · Data and Tool Showcase Track<br><span>21st International Conference on Mining Software Repositories · Lisbon, Portugal</span></p>
+<div class="actions"><a class="button primary" href="https://zenodo.org/records/10317389">Get the dataset</a><a class="button" href="https://doi.org/10.1145/3643991.3644882">Read the paper</a><a class="button" href="https://github.com/ISE-Research/DistilKaggle">Explore the code</a></div>
+<p class="hero-description">Study notebook code, documentation, and structure<br class="desktop-break"> without collecting hundreds of gigabytes of raw notebooks.</p>
 </section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
+<section class="intro band" id="overview"><div class="wrap reading"><h2>Notebook research, with the details intact.</h2><p>Computational notebooks combine executable code and narrative. DistilKaggle brings these two layers together in a research dataset: cell-level content linked to notebook-level measurements of code, documentation, and structure.</p><p>The paper introduces <strong>34 metrics</strong> and a combined collection of <strong>542,051 notebooks</strong>. Researchers can use the data to select notebooks by their characteristics, examine documentation practices, and develop or evaluate notebook analysis tools.</p><p>The archived release covers publicly available Python notebooks from <strong>September 2015 to October 2023</strong>. The code and Markdown collection covers 542,051 notebooks; the metrics CSV covers <strong>over 517,000</strong>. These are different coverage counts, not interchangeable totals.</p><p class="source">Sources: <a href="https://doi.org/10.1145/3643991.3644882">MSR 2024 paper</a> and <a href="https://zenodo.org/records/10317389">Zenodo v1 release</a>.</p></div></section>
+<section class="section wrap" id="construction"><div class="section-heading"><h2>From notebooks to research-ready tables</h2><p>Cell content and notebook metrics offer two complementary views of the collection.</p></div>
+<figure class="pipeline"><div class="pipeline-inputs"><div><strong>293,290 notebooks</strong><span>Collected from Kaggle<br>October 2020–October 2023</span></div><div><strong>248,761 notebooks</strong><span>From KGTorrent<br>Earlier Kaggle collection</span></div></div><div class="pipeline-join" aria-hidden="true"></div><div class="pipeline-total"><strong>542,051 notebooks</strong><span>Combined collection reported in the paper</span></div><div class="pipeline-down" aria-hidden="true"></div><div class="pipeline-outputs"><div><span class="file-label">code.csv</span><strong>Code cells</strong><span>Source text, cell position,<br>and execution metadata</span></div><div><span class="file-label">markdown.csv</span><strong>Markdown cells</strong><span>Narrative text linked<br>to notebook and cell position</span></div><div><span class="file-label">notebook_metrics.csv</span><strong>Notebook metrics</strong><span>Features for a subset<br>of over 517,000 notebooks</span></div></div><figcaption><strong>Figure 1.</strong> Collection and dataset organization, redrawn for this website from the paper’s construction method and combined-dataset description. File coverage follows the Zenodo release.</figcaption></figure>
 </section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="section band" id="dataset"><div class="wrap"><div class="section-heading"><h2>Choose the data you need</h2><p>Start with the metrics file for notebook-level analysis, or download the cell files to work directly with source content.</p></div>
+<p class="table-hint">Scroll horizontally to see file sizes and download links.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Dataset downloads"><table class="downloads"><caption>Table 1. Main dataset files · Zenodo v1</caption><thead><tr><th scope="col">File</th><th scope="col">Contents</th><th scope="col">File size</th><th scope="col">Download</th></tr></thead><tbody>
+<tr><th scope="row"><code>notebook_metrics.csv</code></th><td>Notebook features for over 517,000 notebooks</td><td>121.1 MB</td><td><a href="https://zenodo.org/records/10317389/files/notebook_metrics.csv?download=1">Metrics CSV</a></td></tr>
+<tr><th scope="row"><code>code.csv</code></th><td>Over 12 million code-cell rows</td><td>3.9 GB</td><td><a href="https://zenodo.org/records/10317389/files/code.csv?download=1">Code CSV</a></td></tr>
+<tr><th scope="row"><code>markdown.csv</code></th><td>Over 5 million Markdown-cell rows</td><td>1.5 GB</td><td><a href="https://zenodo.org/records/10317389/files/markdown.csv?download=1">Markdown CSV</a></td></tr>
+<tr><th scope="row"><code>DistilKaggle.tar.gz</code></th><td>Compressed dataset bundle</td><td>1.6 GB</td><td><a href="https://zenodo.org/records/10317389/files/DistilKaggle.tar.gz?download=1">Dataset archive</a></td></tr>
+</tbody></table></div><p class="note">Choose the archive or the individual CSVs; you do not need both. Sizes are the rounded download sizes listed on <a href="https://zenodo.org/records/10317389">Zenodo</a>. The archive is compressed, while the CSV sizes are uncompressed.</p>
+<div class="schema"><h3>How the cell files connect</h3><p>Use <code>kernel_id</code> to identify a notebook and <code>cell_index</code> to order its cells. Both downloaded cell files use these keys.</p><p class="table-hint">Scroll horizontally to see every field description.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Cell data schema"><table><caption>Table 2. Verified headers of the released cell CSVs</caption><thead><tr><th scope="col">Field</th><th scope="col">Available in</th><th scope="col">Meaning</th></tr></thead><tbody>
+<tr><th scope="row"><code>kernel_id</code></th><td>Both cell files</td><td>Kaggle notebook identifier</td></tr><tr><th scope="row"><code>cell_index</code></th><td>Both cell files</td><td>Position of the cell within the notebook</td></tr><tr><th scope="row"><code>source</code></th><td>Both cell files</td><td>The cell’s code or Markdown text</td></tr><tr><th scope="row"><code>output_type</code></th><td>Code cells</td><td>Type of the first recorded output, when present</td></tr><tr><th scope="row"><code>execution_count</code></th><td>Code cells</td><td>Recorded execution counter, when present</td></tr>
+</tbody></table></div><p class="note">Headers verified against the released CSVs; field behavior follows the <a href="https://github.com/ISE-Research/DistilKaggle/blob/main/0/utility/1_dataframe_generator.py">cell extraction script</a>. The script’s version-ID field is not present in these released headers. These CSVs retain source and selected metadata; they do not package the original runtime, dependencies, input datasets, or complete output payloads.</p></div>
+</div></section>
+<section class="section wrap" id="metrics"><div class="section-heading"><h2>A closer look at the 34 metrics</h2><p>The paper combines script-based measurements with features specific to computational notebooks.</p></div>
+<div class="metric-controls" hidden><label for="metric-search">Find a metric<input id="metric-search" type="search" placeholder="e.g. Markdown, complexity, LOC"></label><label for="metric-category">Metric group<select id="metric-category"><option value="">All groups</option><option>Basic code</option><option>Complexity</option><option>Halstead</option><option>Readability</option><option>Notebook</option></select></label><p id="metric-count" role="status" aria-live="polite">34 metrics</p></div>
+<p class="metric-hint">Scroll within the table to browse all 34 metrics.<span class="table-hint-inline"> Scroll horizontally to see metric names.</span></p><div class="table-scroll metrics-scroll" tabindex="0" role="region" aria-label="Paper metric reference"><table id="metric-table"><caption>Table 3. Metric reference adapted from Table 1 of the paper</caption><thead><tr><th scope="col">Group</th><th scope="col">Paper abbreviation</th><th scope="col">Metric</th></tr></thead><tbody><tr data-category="Basic code"><td>Basic code</td><th scope="row"><code>LOC</code></th><td>Lines of code</td></tr>
+<tr data-category="Basic code"><td>Basic code</td><th scope="row"><code>BLC</code></th><td>Blank code lines</td></tr>
+<tr data-category="Basic code"><td>Basic code</td><th scope="row"><code>LOCom</code></th><td>Comment lines</td></tr>
+<tr data-category="Basic code"><td>Basic code</td><th scope="row"><code>CW</code></th><td>Words in comments</td></tr>
+<tr data-category="Basic code"><td>Basic code</td><th scope="row"><code>S</code></th><td>Statements</td></tr>
+<tr data-category="Basic code"><td>Basic code</td><th scope="row"><code>P</code></th><td>Parameters</td></tr>
+<tr data-category="Basic code"><td>Basic code</td><th scope="row"><code>UDF</code></th><td>User-defined functions</td></tr>
+<tr data-category="Complexity"><td>Complexity</td><th scope="row"><code>CyC</code></th><td>Cyclomatic complexity</td></tr>
+<tr data-category="Complexity"><td>Complexity</td><th scope="row"><code>NBD</code></th><td>Nested block depth</td></tr>
+<tr data-category="Complexity"><td>Complexity</td><th scope="row"><code>KLCID</code></th><td>Kind of line of code identifier density</td></tr>
+<tr data-category="Halstead"><td>Halstead</td><th scope="row"><code>OPRND</code></th><td>Operands</td></tr>
+<tr data-category="Halstead"><td>Halstead</td><th scope="row"><code>OPRAT</code></th><td>Operators</td></tr>
+<tr data-category="Halstead"><td>Halstead</td><th scope="row"><code>UOPRND</code></th><td>Unique operands</td></tr>
+<tr data-category="Halstead"><td>Halstead</td><th scope="row"><code>UOPRAT</code></th><td>Unique operators</td></tr>
+<tr data-category="Readability"><td>Readability</td><th scope="row"><code>ALLC</code></th><td>Average code line length</td></tr>
+<tr data-category="Readability"><td>Readability</td><th scope="row"><code>ID</code></th><td>Identifiers</td></tr>
+<tr data-category="Readability"><td>Readability</td><th scope="row"><code>AID</code></th><td>Average number of identifiers</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>CC</code></th><td>Code cells</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>MeanLCC</code></th><td>Mean lines per code cell</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>I</code></th><td>Imports</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>MeanWMC</code></th><td>Mean words per Markdown cell</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>H1</code></th><td>Level-one Markdown headings</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>H2</code></th><td>Level-two Markdown headings</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>H3</code></th><td>Level-three Markdown headings</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>MC</code></th><td>Markdown cells</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>MeanLMC</code></th><td>Mean lines per Markdown cell</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>MW</code></th><td>Markdown words</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>LMC</code></th><td>Lines in Markdown cells</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>DMC</code></th><td>Distribution of Markdown cells</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>DI</code></th><td>Distribution of imports</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>PT</code></th><td>Author performance tier</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>EAP</code></th><td>External API popularity</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>NVD</code></th><td>Visualization outputs</td></tr>
+<tr data-category="Notebook"><td>Notebook</td><th scope="row"><code>EC</code></th><td>Executed cells</td></tr></tbody></table></div><p id="metric-empty" hidden>No matching metrics. Try a different term or choose “All groups”.</p>
+<p class="note">This table describes the <strong>paper’s metric vocabulary</strong>, not a promise of identical CSV column names. The released code uses names such as <code>NEC</code>, <code>UOPRATOR</code>, <code>AOPERATOR</code>, and <code>LOPERATOR</code>, and includes extra features. Check the actual header and <a href="https://github.com/ISE-Research/DistilKaggle/blob/main/0/utility/4_notebook_metrics_generator.py">aggregation script</a> before selecting columns. A metric is a measured feature, not a validated quality score on its own.</p>
 </section>
-<!-- End paper abstract -->
+<section class="section band" id="application"><div class="wrap"><div class="section-heading"><h2>What can notebook metrics tell us?</h2><p>The repository’s example explores predicting an author’s Kaggle Performance Tier from notebook metrics with a Random Forest classifier.</p></div>
+<div class="results-intro"><p>The saved notebook balances classes with random undersampling, uses an 80/20 training/test split, and reports <strong>0.56 accuracy</strong> on <strong>8,884 test examples</strong>. External API popularity (<code>EAP</code>) has the highest feature importance in that saved run.</p><p class="note">The figures and numbers below are archived outputs from the <a href="https://github.com/ISE-Research/DistilKaggle/blob/main/utility/2_application.ipynb">example notebook</a>. They have not been recomputed for this website. The saved run includes target labels 0–5; these are shown as recorded, without assigning tier names.</p></div>
+<div class="figures"><figure><a href="static/images/confusion-matrix.png"><img src="static/images/confusion-matrix.png" alt="Saved confusion matrix for six target labels, 0 through 5. Most confusion occurs between labels 0 through 4; label 5 is separated more strongly." width="683" height="547"></a><figcaption><strong>Figure 2.</strong> Confusion matrix from the repository’s saved example. Rows are actual labels and columns are predictions. Select the image to view it at full size.</figcaption></figure><figure><a href="static/images/feature-importance.png"><img src="static/images/feature-importance.png" alt="Saved Random Forest feature-importance chart. EAP leads at 0.099952, followed by imports at 0.037969 and H2 headings at 0.037248." width="1063" height="682"></a><figcaption><strong>Figure 3.</strong> Feature importance from the same saved run. Importance describes the fitted model; it does not establish a causal effect on developer expertise.</figcaption></figure></div>
+<details><summary>View the saved classification report</summary><p class="table-hint">Scroll horizontally to see all result columns.</p><div class="table-scroll" tabindex="0" role="region" aria-label="Saved classification report"><table><caption>Table 4. Archived test-set results, rounded as printed in the notebook</caption><thead><tr><th scope="col">Target label</th><th scope="col">Precision</th><th scope="col">Recall</th><th scope="col">F1</th><th scope="col">Support</th></tr></thead><tbody>
+<tr><th scope="row">0</th><td>0.51</td><td>0.48</td><td>0.49</td><td>1,537</td></tr><tr><th scope="row">1</th><td>0.37</td><td>0.39</td><td>0.38</td><td>1,468</td></tr><tr><th scope="row">2</th><td>0.33</td><td>0.37</td><td>0.35</td><td>1,474</td></tr><tr><th scope="row">3</th><td>0.55</td><td>0.46</td><td>0.50</td><td>1,470</td></tr><tr><th scope="row">4</th><td>0.62</td><td>0.69</td><td>0.65</td><td>1,468</td></tr><tr><th scope="row">5</th><td>1.00</td><td>0.98</td><td>0.99</td><td>1,467</td></tr><tr><th scope="row">Macro average</th><td>0.57</td><td>0.56</td><td>0.56</td><td>8,884</td></tr></tbody></table></div></details>
+<p class="note">For a new predictive study, fit preprocessing on training data only and consider author-level splits. The archived example imputes before splitting and demonstrates a notebook-level split.</p>
+</div></section>
+<section class="section wrap" id="quickstart"><div class="section-heading"><h2>Start with one CSV</h2><p>Download <a href="https://zenodo.org/records/10317389/files/notebook_metrics.csv?download=1">notebook_metrics.csv</a> to your working directory. Install pandas with <code>pip install pandas</code>, then inspect the data and its schema.</p></div><div class="code-header"><span>Python · inspect notebook metrics</span><button class="copy-button" data-copy="quickstart-code" hidden>Copy code</button></div><pre><code id="quickstart-code">import pandas as pd
 
+metrics = pd.read_csv("notebook_metrics.csv")
+print(metrics.shape)
+print(metrics.columns.tolist())
+print(metrics.head())
+</code></pre><details class="optional-example"><summary>Optional: sample the code-cell file</summary><p>First download <a href="https://zenodo.org/records/10317389/files/code.csv?download=1">code.csv (3.9 GB)</a> into the same working directory. Then run:</p><div class="code-header"><span>Python · sample code cells</span><button class="copy-button" data-copy="cell-code" hidden>Copy cell example</button></div><pre><code id="cell-code">import pandas as pd
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+for cells in pd.read_csv("code.csv", chunksize=10_000):
+    print(cells.head())
+    break</code></pre></details><p class="note">The cell CSVs are large; use samples, chunks, or selected columns rather than loading every cell at once. See the <a href="https://github.com/ISE-Research/DistilKaggle/tree/main/utility">repository utilities</a> for aggregation and the example analysis.</p></section>
+<section class="section band" id="citation"><div class="wrap"><div class="section-heading"><h2>Cite DistilKaggle</h2><p>Mojtaba Mostafavi Ghahfarokhi, Arash Asgari, Mohammad Abolnejadian, and Abbas Heydarnoori. 2024. <em>DistilKaggle: A Distilled Dataset of Kaggle Jupyter Notebooks.</em> MSR ’24, 647–651.</p><p><a href="https://doi.org/10.1145/3643991.3644882">Paper DOI: 10.1145/3643991.3644882</a><br><a href="https://doi.org/10.5281/zenodo.10317389">Dataset DOI: 10.5281/zenodo.10317389</a></p></div><div class="code-header"><a href="static/distilkaggle.bib" download>Download BibTeX</a><button class="copy-button" data-copy="bibtex" hidden>Copy BibTeX</button></div><pre><code id="bibtex">@inproceedings{mostafavi-msr2024-DistilKaggle,
+  author    = {Mostafavi Ghahfarokhi, Mojtaba and Asgari, Arash and
+               Abolnejadian, Mohammad and Heydarnoori, Abbas},
+  title     = {{DistilKaggle}: A Distilled Dataset of {Kaggle} {Jupyter} Notebooks},
+  booktitle = {Proceedings of the 21st International Conference on Mining Software Repositories},
+  series    = {MSR &#x27;24},
+  year      = {2024},
+  pages     = {647--651},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  location  = {Lisbon, Portugal},
+  doi       = {10.1145/3643991.3644882},
+  url       = {https://doi.org/10.1145/3643991.3644882}
+}</code></pre><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div></section>
+</main>
+<footer class="wrap footer"><div><a class="wordmark" href="#main">DistilKaggle<span aria-hidden="true">.</span></a><p>Questions or raw-notebook access?<br><a href="mailto:mohammad.abolnejadian@gmail.com">Contact Mohammad Abolnejadian</a></p></div><div><p>Dataset: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><br>Repository code: <a href="https://github.com/ISE-Research/DistilKaggle/blob/main/LICENSE">MIT</a></p><p class="template-credit">Adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://nerfies.github.io/">Nerfies</a>.<br>Website: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p></div></footer>
+</body></html>

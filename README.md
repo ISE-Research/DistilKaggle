@@ -1,44 +1,32 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+# DistilKaggle project website
 
+The public research site is https://ise-research.github.io/DistilKaggle/ . GitHub Pages is configured to serve the **root of the `site` branch**. The `main` branch holds research code; its `site/index.html` is not the publishing source.
 
-Example project pages built using this template are:
-- https://www.vision.huji.ac.il/deepsim/
-- https://www.vision.huji.ac.il/3d_ads/
-- https://www.vision.huji.ac.il/ssrl_ad/
-- https://www.vision.huji.ac.il/conffusion/
+## Edit and preview
 
+- Edit `index.html` for text, tables, links, authors, and citation.
+- Edit `static/css/index.css` for layout and responsive styles.
+- Edit `static/js/index.js` for metric filtering and copy buttons.
+- The figures are in `static/images/`; `static/distilkaggle.bib` is the downloadable citation. Update the inline and downloadable BibTeX together.
+- Run `python3 -m http.server 8765 --bind 127.0.0.1` from this directory and open http://127.0.0.1:8765/ . No build step is required.
+- Publish reviewed changes to `site`; GitHub Pages rebuilds automatically. No website settings changes are required.
 
-## Start using the template
-To start using the template click on `Use this Template`.
+## Content sources and editorial decisions
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+Checked 2026-10-09.
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+1. Paper: https://doi.org/10.1145/3643991.3644882 . Author-posted full text: https://www.researchgate.net/publication/379986285_DistilKaggle_A_Distilled_Dataset_of_Kaggle_Jupyter_Notebooks . Used for author affiliation, 34 metric vocabulary, construction method, and the combined count (293,290 + 248,761 = 542,051).
+2. Dataset release v1: https://zenodo.org/records/10317389 . Used for coverage period, approximate row counts, download links/sizes, CC BY 4.0, and contact address. The metrics file covers over 517,000 notebooks, not the full 542,051 cell collection.
+3. Released CSV headers were sampled directly. `code.csv`: `kernel_id,cell_index,source,output_type,execution_count`. `markdown.csv`: `kernel_id,cell_index,source`. `current_kernel_version_id` exists in the extraction script but not these release headers. The metrics-file sample timed out, so the site does not claim a verified metrics CSV schema.
+4. Repository main branch at commit `45e7c0a`: `0/utility/1_dataframe_generator.py`, `0/utility/4_notebook_metrics_generator.py`, and `utility/2_application.ipynb`. The metrics reference follows the paper's 34 entries, not the CSV's exact column names or implementation semantics. In particular, the code's AID aggregation differs from the paper's label. Consult source before analysis.
+5. Figure 1 is a new HTML/CSS diagram summarizing the collection described in the paper, with coverage labels from Zenodo. It is not presented as an original paper image. Figures 2 and 3 are the **unaltered embedded PNG outputs** of cells 18 and 21 (zero-based) from the saved example notebook. The classification table reproduces cell 17's saved report; EAP importance follows cell 20. These outputs were not recomputed. They are not relabeled as the paper's exact figures/results.
+6. The example imputes before splitting and operates on notebook-level samples. Its outputs are illustrative historical results, not a newly validated predictive benchmark. Target labels 0–5 are preserved without speculative tier names.
+7. The CSVs retain source and selected metadata, not complete runtime environments or output payloads. The page avoids promising executable reproduction.
 
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
+The social preview is a typographic graphic generated for this website. The favicon is an original geometric lettermark. The site retains template attribution and CC BY-SA 4.0 website licensing; the dataset and research code have separate licenses.
 
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://pages.cs.huji.ac.il/eliahu-horwitz/](https://pages.cs.huji.ac.il/eliahu-horwitz/)
+## Verify before publishing
 
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+Check desktop and narrow-mobile rendering, horizontal table scrolling, loaded figures, every navigation anchor, search and category filtering (including no results), the expandable result table, copy buttons, downloadable BibTeX, and local asset paths. Core content is HTML and remains available with JavaScript disabled. External resources should be checked against their authoritative records; do not download the multi-gigabyte dataset merely to test a link.
 
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+The original template's unused static files are preserved in Git but are not loaded by this page. There are no carousel, tracking, video, or PDF-viewer scripts on the published page.
